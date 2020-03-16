@@ -4,7 +4,7 @@
 .right{
     
     
-    background-color: black;
+    background-color: lightskyblue;
     position: fixed;
     width: 50%;
     height: 100%;
@@ -29,6 +29,27 @@
 }
 
 
+
+.nervous{
+    
+	position: absolute;
+	bottom: 220px;
+	left: 50%;
+	background: url(download.jpg);
+	width: 223px;
+	height: 100px;
+	margin-left: -180px;
+	display: none;
+}
+
+
+.nervous.show{
+    
+    display: block;
+    
+}
+
+
 .rocket{
     
     position: absolute;
@@ -43,12 +64,28 @@
 }
 
 
-.rocket.flying{
+
+body.body-state3 .rocket{
     
     bottom: 1000px;
     
-    
 }
+
+
+.state1,
+.state2,
+.state3,
+.state4,
+.state5{
+    display: none;
+}
+
+body.body-state1 .state1{display: block;}
+body.body-state2 .state2{display: block;}
+body.body-state3 .state3{display: block;}
+body.body-state4 .state4{display: block;}
+body.body-state5 .state5{display: block;}
+    
 
 .ground{
     
@@ -63,7 +100,8 @@
 }
 
 
-    
+
+
 
 
 a.button{
