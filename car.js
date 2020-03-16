@@ -1,3 +1,10 @@
+var coolstuff = function(){
+    
+    document.getElementById('cool').className = 'cooler red';
+    
+    
+}
+
 var car = {
     
     make: 'VW',
@@ -9,6 +16,13 @@ var car = {
         
         this.carturnon = true;
         
-    }
+    },
+    
+    fly: function() {
+    
+        alert('fly');
+}
+
+
 };
 
