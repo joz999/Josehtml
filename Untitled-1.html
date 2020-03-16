@@ -4,14 +4,14 @@
     <title> Rocket Launch </title>
     
     <link rel="stylesheet" type="text/css" href = "test.css"> 
-    <script src="car.js"></script>
+    <script type= "text/javascript" src="rocket.js"></script>
     
     
     
 </head>  
     
     
-<body>
+<body class = "body-state1">
     
     <div class = "left">
         
@@ -21,7 +21,7 @@
             <h1>Rocket Launcher</h1>
             
             <a href="#" class="button"
-            onclick="startcoutndown();">
+            onclick="changestate(2);">
             
             Launch!
                 
@@ -37,7 +37,7 @@
             <h1 id="countdown">10</h1>
             
             <a href="#" class="button"
-            onclick="abort();">
+            onclick="changestate(1);">
             
             Abort!
                 
@@ -62,7 +62,7 @@
             <h1>Well Done!</h1>
             
             <a href="#" class="button"
-            onclick="doitagain();">
+            onclick="changestate(1);">
             
             Do it again!
                 
@@ -79,7 +79,7 @@
             <h1>Oh noooo!</h1>
             
             <a href="#" class="button"
-            onclick="doitagain();">
+            onclick="changestate(1);">
             
             Do it again!
                 
@@ -100,6 +100,10 @@
         <div class="rocket">
         </div>
          <div class="ground">
+        </div>
+        
+        <div class="nervous" id="nervous">
+            
         </div>
         
         
