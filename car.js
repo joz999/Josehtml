@@ -1,28 +1,13 @@
-var coolstuff = function(){
+var changestate = function(state) {
     
-    document.getElementById('cool').className = 'cooler red';
+    document.body.classname = 'body-state' + state;
     
+    if(state == 2) {
+        
+        
+                    document.getElementById('countdown').innerHTML = 9;
+            
+            
+    };
     
 }
-
-var car = {
-    
-    make: 'VW',
-    type: 'Polo',
-    color: 'blue',
-    seats: ['seat1','seat2','seat3','seat4'],
-    carturnon: false,
-    turnon: function(){
-        
-        this.carturnon = true;
-        
-    },
-    
-    fly: function() {
-    
-        alert('fly');
-}
-
-
-};
-
