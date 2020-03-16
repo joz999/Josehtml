@@ -1,12 +1,27 @@
 h1{
     
     color: green;
-    font-size: 20px;
+    font-size: 90px;
 }
 
 .Jose{
     
     
     color: aqua;
+    
+}
+
+
+header{
+    
+    
+    background-color: aqua;
+}
+
+
+header img{
+    
+    border-radius: 150px
+    
     
 }
